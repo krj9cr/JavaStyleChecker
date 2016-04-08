@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 # This was the orginal Parser that I wrote,
-# You provide it with one command line argument, a path to a .gava file
+# You provide it with one command line argument, a path to a .txt file
+# That is checkstyle's output for the google style
 
 import sys
 

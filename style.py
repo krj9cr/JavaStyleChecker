@@ -10,6 +10,8 @@ import os
 import string
 import subprocess
 
+import paramiko, base64
+
 import json
 from json import JSONEncoder
 
@@ -161,6 +163,36 @@ def parser(str_val):
 
 	return errors
 
+def SSHconnect():
+	# Credentials
+	host = "hitchcock.cs.virginia.edu"
+	user = "krj9cr"
+	pw   = "EILkQL6Q"
+
+	# Create a client
+	client = paramiko.SSHClient()
+	# Next line gets around the host being "unkown"
+	client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+	client.connect(host, username=user, password=pw)
+
+	return client
+
+def getProjectNames(client):
+	# List of all the names
+	projects = []
+
+	# Execute ls command 
+	stdin, stdout, stderr = client.exec_command('ls /localtmp/java_projects')
+	
+	# Go through the output
+	for line in stdout:
+		# Clean up the line and append it
+		line = line.strip()
+		projects.append(line)
+
+	return projects
+
+
 
 #-----------------------------------------------#
 ############### TIME TO DO STUFF ################
@@ -213,10 +245,60 @@ result = json.loads(json_encoding)
 
 # PRINT it pretty
 print json.dumps(result, sort_keys=True, indent=4, separators=(',', ': '))
+'''
 
+# Do stuff with the SSH client
+client = SSHconnect()
+projects = getProjectNames(client)
 
+# Check out each of the projects
+# But actually just one for now
+for i in range(0,1):
+	# Path to wherever Data is
+	rootdir = "/localtmp/java_projects/" + projects[i]
 
+	# Create a sort of dummy project
+	p = Project(i)
 
+	# And a dummy version
+	v = Version(0)
+
+	# ITERATE through directory's files
+	#for subdir, dirs, files in os.walk(rootdir):
+	    
+	    #file_count = 0
+	    
+	    #for file in files:
+	        # get the full path to the file
+	        #f_path = os.path.join(subdir, file)
+	        
+	        # make sure its a java file
+	        #if file.endswith('.java'):
+	        	# execute shell command and save the output
+	        	#out = subprocess.check_output(['java', '-jar', jar_path, '-c', style_path, f_path])
+	out = subprocess.check_output(['java', '-jar', jar_path, '-c', style_path, rootdir])
+
+	print out
+
+	        	# pass the output to the parser
+	        	#errors = parser(out)
+
+	        	# create a file
+	        	#f = File(file_count, f_path, file, errors)
+
+	        	# add it to this version
+	        	#v.add_file(f)
+
+	# add this version to this project
+	#p.add_version(v)
+
+# encode everything as a JSON thing
+json_encoding = MyEncoder().encode(p)
+result = json.loads(json_encoding)
+
+# Close the session
+client.close()
+'''
 
 
 
