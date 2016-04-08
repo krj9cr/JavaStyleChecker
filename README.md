@@ -26,15 +26,15 @@ Data Science and Software Engineering - Spring 2016 - Group Project
 
 # Tasks
 + KAREN
-- xredo samples
-- 	xredo JSON structure
-- 	xparse projects 0-9
-- parse 1052projects.txt
-- tar em up (only javas and change_logs)
-- move data to Rivanna
-- port to Rivanna
+	- xredo samples
+	- xredo JSON structure
+	- xparse projects 0-9
+	- parse 1052projects.txt
+	- tar em up (only javas and change_logs)
+	- move data to Rivanna
+	- port to Rivanna
 
 + KEVIN/SHWETA
-- parse out meaningful information
-- try to answer RQs
-- NoSQL?
+	- parse out meaningful information
+	- try to answer RQs
+	- NoSQL?
