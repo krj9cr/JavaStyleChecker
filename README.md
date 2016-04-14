@@ -34,7 +34,7 @@ Data Science and Software Engineering - Spring 2016 - Group Project
 	- move data to Rivanna
 	- port to Rivanna
 
-+ KEVIN/SHWETA
++ KEVIN / SHWETA
 	- parse out meaningful information
 	- try to answer RQs
 	- NoSQL?

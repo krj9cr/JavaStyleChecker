@@ -18,13 +18,22 @@
 			- char #
 
 KAREN
--redo samples
-	-redo JSON structure
-	-parse projects 0-9
--parse 1052projects.txt
--tar em up (only javas and change_logs)
--move data to Rivanna
+xredo samples
+	xredo JSON structure
+	xparse projects 0-9
+xparse 1052projects.txt
+xtar em up (only javas and change_logs)
+xmove data to Rivanna
 -port to Rivanna
+	- embarrasingly parallel
+	- spawn.sh
+		- have one script spawn sbatch scripts, passing indicies for it to work on 
+		- pass it how many cores to use
+	- worker.sh
+		- each script does for loop on directory until it reaches its indicies
+		- then it does jar on all its assigned indicies
+		- then it parses all of them
+	- then combines output by concatenating results (delete ] from first file, delete [ from second file and concat?
 
 KEVIN/SHWETA
 - meaningful info system

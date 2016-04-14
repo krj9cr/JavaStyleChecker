@@ -8,9 +8,7 @@
 import sys
 import os
 import string
-import subprocess
-
-import paramiko, base64
+from subprocess import PIPE,Popen
 
 import json
 from json import JSONEncoder
@@ -22,37 +20,12 @@ from json import JSONEncoder
 # Java Projects
 class Project:
 	def __init__(self, i):
-		self.idx = i
-		self.versions = [] # list of its versions
-		self.version_count = 0
-
-	def __str__(self):
-		v_str = ""
-		for v in self.versions:
-			v_str += str(v)
-
-		return "{ Project: " + str(self.idx) + "\n" + v_str + "}\n"
-
-	def get_version_v(self,v):
-		return versions[v]
-
-	def add_version(self,v):
-		self.versions.append(v)
-		self.version_count += 1
-
-# Versions of a Project
-class Version:
-	def __init__(self,i):
-		self.idx = i
-		self.files = [] # list of files
-		self.file_count = 0
-
-	def __str__(self):
-		f_str = ""
-		for f in self.files:
-			f_str += str(f)
-
-		return "  { Version: " + str(self.idx) + "\n" + f_str + "  }\n"
+		self.idx = i 			# unique id
+		self.name = ""			# project name (/localtmp/java_projects/<name>)
+		self.size = 0 			# sum of file sizes
+		self.total_errors = 0 	# sum of file error_counts
+		self.files = [] 		# list of its versions
+		self.file_count = 0 	# num files
 
 	def get_file_f(self,f):
 		return files[f]
@@ -60,22 +33,18 @@ class Version:
 	def add_file(self,f):
 		self.files.append(f)
 		self.file_count += 1
+		if (f != ""):
+			self.total_errors += f.error_count
+			self.size += f.size
 
 # .Java Files
 class File:
-	def __init__(self,i,p,n,e):
-		self.idx = i
-		self.path = p
-		self.name = n
-		self.errors = e # list of errors
-		self.error_count = len(self.errors)
-
-	def __str__(self):
-		e_str = ""
-		for e in self.errors:
-			e_str = e_str + str(e)
-
-		return "    { File: " + str(self.idx) + " " + str(self.name) + "\n" + e_str + "    }\n"
+	def __init__(self, i, p, s):
+		self.idx = i 			# unique id
+		self.path = p 			# full path
+		self.size = s 			# size in bytes
+		self.errors = [] 		# list of errors
+		self.error_count = 0	# num errors
 
 	def get_error_e(self,e):
 		return errors[e]
@@ -87,11 +56,8 @@ class File:
 # Style Errors
 class Error:
 	def __init__(self,i,n):
-		self.idx = i
-		self.name = n
-
-	def __str__(self):
-		return "      Error: " + str(self.idx) + " " + str(self.name) + "\n"
+		self.idx = i 			# unique id
+		self.name = n 			# style module type/name
 
 # Little helper encoder class
 class MyEncoder(JSONEncoder):
@@ -105,64 +71,118 @@ class MyEncoder(JSONEncoder):
 
 # Parses the output of Checkstyle 
 # using the Google Style XML!
-def parser(str_val):
+def parser(filename):
 	# we're gonna make a list of errors
-	errors = []
+	projects = []
 	error_count = 0
+	
+	p = Project(0)
+
+	fl = ""
+	project_count = 0
+	file_count = 0
+
+	curr_file_path = ""
 
 	# since we're given a string we need to split it by newline characters
 	# so that it becomes lines (but actually an array of strings)
-	str_list = string.split(str_val,'\n')
+	#str_list = string.split(str_val,'\n')
 
 	# iterate through the lines
-	for line in str_list:
-		# make sure its not a dumb line
-		if line == "Audit done." or line == "Starting audit..." or line == "" :
-			continue
+	with open(filename) as f:
+		for line in f:
+			line = line.strip()
+    		# Check if new project
+			if line == "Starting audit...":
+				# Create new project and version
+				p = Project(project_count)
+				project_count += 1
+				file_count = 0
 
-		# PARSE
-		if line[0] == "[":
-        	#GRAB ALL STUPID LINE INFO
-			split = line.partition("[")
-			rest = split[2]
-			split = rest.partition("]")
-			tag = split[0]
-			rest = split[2].lstrip()
+			# Done with this project
+			# So add old file to version
+			# Add version to project
+			# Add project to list of projects
+			if line == "Audit done.":
+				# try getting the path for the project
+				try:
+					ppath = p.files[0].path.split('/')
+					p.name = ppath[7] # for example: "/nv/blue/krj9cr/java/localtmp/java_projects/mDiyo_InfiCraft/inficraft/tweaks/hunger/HTContainer.java"
+				except: 
+					True
+				p.add_file(fl)
+				projects.append(p)
+			
+			# Skip any blank lines
+			if line == "" :
+				continue
 
-			split = rest.partition(":")
-			file_location = split[0]
-			rest = split[2].lstrip()
-
-			split = rest.partition(":")
-			line_location = split[0]
-			rest = split[2].lstrip()
-
-			if (rest[0].isdigit()):
-				split = rest.partition(":")
-				char_location = split[0]
+			# PARSE LINE
+			if line[0] == "[":
+	        	#GRAB ALL STUPID LINE INFO
+				split = line.partition("[")
+				rest = split[2]
+				split = rest.partition("]")
+				tag = split[0]
 				rest = split[2].lstrip()
-			else:
-				char_location = -1
 
-			message = ""
-			rev = rest[::-1]
-			split = rev.partition("[")
-			error_type = split[0][::-1].strip()
-			message = split[2][::-1].strip()
+				split = rest.partition(":")
+				file_location = split[0]
+				rest = split[2].lstrip()
 
-			if (error_type[-1] == "]"):
-				error_type = error_type[:-1]
-			if (message[-1] == "."):
-				message = message[:-1]
+				# Check if new file
+				if file_location != curr_file_path:
+					# Add old file to Version/Project
+					if file_count > 0:
+						p.add_file(fl)
+					# Create new file
+					curr_file_path = file_location
+					# Get its size first
+					proc = Popen(['du','-sb',curr_file_path], stdout=PIPE)
+					out_size = proc.communicate()[0].strip().split()[0]
 
-			#errors.append([tag, file_location, line_location, char_location, message, error_type])
+					#out_size = subprocess.check_output(['du','-sb',curr_file_path]).strip().split()[0]
+					# Create the file
+					fl = File(file_count, curr_file_path, int(out_size))
+					file_count += 1
+					error_count = 0
 
-			# create an Error and put it in our list
-			errors.append(Error(error_count,error_type))
-			error_count += 1
+				split = rest.partition(":")
+				line_location = split[0]
+				rest = split[2].lstrip()
 
-	return errors
+				if (rest[0].isdigit()):
+					split = rest.partition(":")
+					char_location = split[0]
+					rest = split[2].lstrip()
+				else:
+					char_location = -1
 
+				message = ""
+				rev = rest[::-1]
+				split = rev.partition("[")
+				error_type = split[0][::-1].strip()
+				message = split[2][::-1].strip()
+
+				if (error_type[-1] == "]"):
+					error_type = error_type[:-1]
+				if (message[-1] == "."):
+					message = message[:-1]
+
+				#errors.append([tag, file_location, line_location, char_location, message, error_type])
+
+				# create an Error and add it to current file
+				e = Error(error_count,error_type)
+				error_count += 1
+
+				fl.add_error(e)
+
+		f.close()
+
+	return projects
+
+'''
+import paramiko, base64
 def SSHconnect():
 	# Credentials
 	host = "hitchcock.cs.virginia.edu"
@@ -191,6 +211,7 @@ def getProjectNames(client):
 		projects.append(line)
 
 	return projects
+'''
 
 
 
@@ -198,6 +219,30 @@ def getProjectNames(client):
 ############### TIME TO DO STUFF ################
 #-----------------------------------------------#
 
+
+# GET .TXT FILENAME, passed as command line arg
+if len(sys.argv) <> 2:
+	print "Usage: provide one argument, the input file"
+	sys.exit(0)
+
+filename = sys.argv[1]
+
+
+projects = parser(filename)
+
+
+# encode everything as a JSON thing
+json_encoding = MyEncoder().encode(projects)
+result = json.loads(json_encoding)
+
+# PRINT it pretty
+with open(filename,'w') as f:
+	f.write(json.dumps(result, sort_keys=True, separators=(',', ':')))
+
+
+
+
+'''
 # Path to xml style format
 style_path = "google-style.xml"
 
@@ -245,6 +290,8 @@ result = json.loads(json_encoding)
 
 # PRINT it pretty
 print json.dumps(result, sort_keys=True, indent=4, separators=(',', ': '))
+
+'''
 '''
 
 # Do stuff with the SSH client
