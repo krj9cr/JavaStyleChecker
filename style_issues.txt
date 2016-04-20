@@ -1,0 +1,28 @@
+
+Geosoft
+
+Not a Child of TreeWalker
+FileTabCharacter
+
+Removed
+Redundant Throws 
+Double Checked Locking
+JUnitTestCase
+
+Changed
+GenericIllegalRegexp to RegexpSinglelineJava
+
+———————————
+MediaWiki
+
+Changed TabCharacter to FileTabCharacter
+
+Removed:
+  <module name="SuppressWarningsFilter" />
+  <module name="SuppressionFilter">
+    <!-- Suppresses some checks for tests. -->
+    <property name="file" value="${checkstyle.suppressions}" />
+  </module>
+
+From just under <module name="Checker">
+Because we don’t need a filter to suppress any junk
