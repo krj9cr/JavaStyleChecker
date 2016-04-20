@@ -1,0 +1,251 @@
+Initialized projects[][]
+Got project names
+Rank 2 recieved mDiyo_InfiCraft
+Rank 4 recieved datagrids_spec
+Rank 3 recieved eviltester_webDriverExperiments
+Rank 5 recieved storm-book_examples-ch03-topologies
+Rank 6 recieved commercehub-oss_gradle-avro-plugin
+Rank 1 recieved britzke_archivator
+Seeded workers
+Rank 8 recieved johnjohndoe_Android-Developers-Samples
+Rank 7 recieved haraldk_TwelveMonkeys
+Rank 9 recieved CloudBees-community_springboot-gradle-cloudbees-sample
+Rank 9 requesting more work
+Rank 9 recieved nutzam_nutzwx
+Rank 3 requesting more work
+Rank 3 recieved zscott_MultiBitExchange
+Traceback (most recent call last):
+  File "style.py", line 231, in <module>
+    projects = parser(filename)
+  File "style.py", line 92, in parser
+    with open(filename) as f:
+IOError: [Errno 2] No such file or directory: 'jar/m-book_examples-ch03-topologies.txt'
+Rank 5 requesting more work
+Rank 5 recieved mukesh4u_Facebook-Slide-Menu
+Rank 4 requesting more work
+Rank 4 recieved adamw_macwire-activator
+Rank 4 requesting more work
+Rank 4 recieved powercrystals_NetherOres
+Rank 6 requesting more work
+Rank 6 recieved krtek_Birthday-widget
+Traceback (most recent call last):
+  File "style.py", line 231, in <module>
+    projects = parser(filename)
+  File "style.py", line 92, in parser
+    with open(filename) as f:
+IOError: [Errno 2] No such file or directory: 'jar/cebook-Slide-Menu.txt'
+Rank 5 requesting more work
+Rank 5 recieved kk-java_UploadFile
+Rank 4 requesting more work
+Rank 4 recieved vtst_ow
+Rank 1 requesting more work
+Rank 1 recieved brewinapps_ios-maven-plugin
+Rank 5 requesting more work
+Rank 5 recieved salendron_Snakeberry
+Rank 9 requesting more work
+Rank 9 recieved JesusM_PasswordFloatingLabelLayout
+Rank 6 requesting more work
+Rank 6 recieved hacktics_good-old-files
+Rank 1 requesting more work
+Rank 1 recieved chrishulbert_JavaTutorial
+Traceback (most recent call last):
+  File "style.py", line 231, in <module>
+    projects = parser(filename)
+  File "style.py", line 92, in parser
+    with open(filename) as f:
+IOError: [Errno 2] No such file or directory: 'jar/y.txt'
+Rank 5 requesting more work
+Rank 5 recieved apache_vysper
+Rank 9 requesting more work
+Rank 9 recieved jop-devel_jop
+Rank 1 requesting more work
+Rank 1 recieved tuxskar_pixmind
+Rank 6 requesting more work
+Rank 6 recieved aloiscochard_elasticsearch-osem
+Rank 3 requesting more work
+Rank 3 recieved amlcurran_L-Preview-Demo
+Rank 3 requesting more work
+Rank 3 recieved sdj64_Highlands
+Rank 2 requesting more work
+Rank 2 recieved Chipmunk9998_Spectate
+Rank 2 requesting more work
+Rank 2 recieved jiecao-fm_hashids-java
+Rank 1 requesting more work
+Rank 1 recieved slisson_mps-aec
+Rank 1 requesting more work
+Rank 1 recieved safarijv_ifpress-solr-plugin
+Rank 2 requesting more work
+Rank 2 recieved ikai_App-Engine-Java-Mapper-API-demos
+Rank 3 requesting more work
+Rank 3 recieved tobrien_blog-example
+Rank 6 requesting more work
+Rank 6 recieved notnoop_java-apns
+Rank 4 requesting more work
+Rank 4 recieved UnderwaterApps_overlap2d-runtime-libgdx
+Rank 8 requesting more work
+Rank 8 recieved timbray_KeybaseLib
+Rank 2 requesting more work
+Rank 2 recieved processing_processing-tool-template
+Rank 3 requesting more work
+Rank 3 recieved Knickedi_android-toolbox
+Rank 2 requesting more work
+Rank 2 recieved jcabi_jcabi
+Rank 1 requesting more work
+Rank 1 recieved NikolaDespotoski_DrawerLayoutToggles
+Rank 8 requesting more work
+Rank 8 recieved nickwph_InfiniteViewPager
+Rank 2 requesting more work
+Rank 2 recieved kompiro_astah-evernote-plugin
+Rank 8 requesting more work
+Rank 8 recieved chambs_comet-java
+Rank 2 requesting more work
+Rank 2 recieved wilbur_Piggybank
+Rank 6 requesting more work
+Rank 6 recieved Xyene_ASM-Late-Bind-Agent
+Rank 8 requesting more work
+Rank 8 recieved youmu178_MultipleChoiceAlbun
+Rank 2 requesting more work
+Rank 2 recieved dextorer_BuildingForAndroidTV
+Rank 5 requesting more work
+Rank 5 recieved rossmason_mule-streaming-api-demo
+Rank 6 requesting more work
+Rank 6 recieved barjo_arvensis
+Traceback (most recent call last):
+  File "style.py", line 231, in <module>
+    projects = parser(filename)
+  File "style.py", line 92, in parser
+    with open(filename) as f:
+IOError: [Errno 2] No such file or directory: 'jar/son_mule-streaming-api-demo.txt'
+Rank 5 requesting more work
+Rank 5 recieved fcrepo3_fcrepo
+Rank 8 requesting more work
+Rank 8 recieved gitgrimbo_android-sliding-menu-demo
+Rank 4 requesting more work
+Rank 4 recieved gornik_gorgeo
+Rank 3 requesting more work
+Rank 3 recieved delta534_Chisel
+Rank 8 requesting more work
+Rank 8 recieved Buttink_couch-tatertot
+Rank 2 requesting more work
+Rank 2 recieved jwang_iosched
+Rank 4 requesting more work
+Rank 4 recieved berndfo_zooterrain
+Rank 4 requesting more work
+Rank 4 recieved mulesoft_mule-module-rest-router
+Rank 8 requesting more work
+Rank 8 recieved hank_litecoinj
+Rank 3 requesting more work
+Rank 3 recieved ericyue_Express-Sensor
+Rank 6 requesting more work
+Rank 6 recieved hocken_wxg
+Rank 4 requesting more work
+Rank 4 recieved silverbullet-dk_opentele-client-android
+Rank 1 requesting more work
+Rank 1 recieved sps_pushover4j
+Rank 2 requesting more work
+Rank 2 recieved seven456_MultiChannelPackageTool
+Rank 6 requesting more work
+Rank 6 recieved bither_bither-android
+Rank 1 requesting more work
+Rank 1 recieved bodar_utterlyidle
+Rank 7 requesting more work
+Rank 7 recieved IngotPowered_IngotAPI
+Rank 2 requesting more work
+Rank 2 recieved pwittchen_EEGReader
+Rank 7 requesting more work
+Rank 7 recieved srafx_floatframelayout
+Rank 7 requesting more work
+Rank 7 recieved couchbase_couchbase-jvm-core
+Rank 3 requesting more work
+Rank 3 recieved bcdev_beam-globalbedo
+Rank 4 requesting more work
+Rank 4 recieved seamusphelan_ProfileSwitcher
+Rank 1 requesting more work
+Rank 1 recieved jenkinsci_ec2-plugin
+Rank 4 requesting more work
+Rank 4 recieved nsheridan_tumblr-java
+Rank 4 requesting more work
+Rank 4 recieved viilaismonster_LinearAllocFix
+Rank 4 requesting more work
+Rank 4 recieved Armaxis_jmg
+Rank 8 requesting more work
+Rank 8 recieved mhgrove_cp-common-utils
+Rank 1 requesting more work
+Rank 1 recieved maniac103_android_packages_apps_MotoFMService
+Rank 1 requesting more work
+Rank 1 recieved googlesamples_io2014-codelabs
+Rank 3 requesting more work
+Rank 3 recieved Arachnid_AEAuth
+Rank 3 requesting more work
+Rank 3 recieved vRallev_OpenCV
+Rank 6 requesting more work
+Rank 6 recieved SINTEF-9012_bglib
+Rank 7 requesting more work
+Rank 7 recieved hibernate_hibernate-shards
+Rank 2 requesting more work
+Rank 2 recieved willowtreeapps_saguaro
+Rank 8 requesting more work
+Rank 8 recieved kankanV_KankanDashBoard
+Rank 2 requesting more work
+Rank 2 recieved laforge49_JActor2
+Rank 8 requesting more work
+Rank 8 recieved tourettes_libbluray
+Rank 6 requesting more work
+Rank 6 recieved taobao_sqlautoreview
+Rank 1 requesting more work
+Rank 1 recieved OpherV_gitflow4idea
+Rank 1 requesting more work
+Rank 1 recieved lovetuzitong_BaiduImageViewer
+Rank 7 requesting more work
+Rank 7 recieved camunda_camunda-modeler
+Rank 6 requesting more work
+Rank 6 recieved cmichi_visual-traceroute
+Rank 4 requesting more work
+Rank 4 recieved levkhomich_activator-akka-tracing
+Rank 7 requesting more work
+Rank 7 recieved benjsicam_restful-blog
+Rank 4 requesting more work
+Rank 4 recieved thuytrinh_android-collage-views
+Rank 1 requesting more work
+Rank 1 recieved broderix_android-ui-concepts
+Rank 2 requesting more work
+Rank 2 recieved max-weller_friendica-for-android
+Rank 7 requesting more work
+Rank 7 recieved googledrive_android-quickstart
+Rank 1 requesting more work
+Rank 1 recieved Photobucket_Solbase
+Telling workers to exit
+Rank 4 requesting more work
+Rank 4 recieved airlift_airlift
+Received final request from 7
+Rank 7 requesting more work
+Received final request from 8
+Rank 8 requesting more work
+Received final request from 6
+Rank 6 requesting more work
+Received final request from 2
+Rank 2 requesting more work
+Received final request from 1
+Rank 1 requesting more work
+Received final request from 5
+Rank 5 requesting more work
+Received final request from 4
+Rank 4 requesting more work
+Received final request from 3
+Rank 3 requesting more work
+Received final request from 9
+Sent dietag to 1
+Sent dietag to 2
+Sent dietag to 3
+Sent dietag to 4
+Sent dietag to 5
+Sent dietag to 6
+Sent dietag to 7
+Sent dietag to 8
+Sent dietag to 9
+Done
+RESULT: 805.425338
+Rank 9 requesting more work
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 9 with PID 0 on node udc-ba39-28j exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

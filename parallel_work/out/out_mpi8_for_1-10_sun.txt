@@ -1,0 +1,53 @@
+Initialized projects[][]
+Got project names
+Rank 2 recieved mDiyo_InfiCraft
+Rank 4 recieved datagrids_spec
+Rank 3 recieved eviltester_webDriverExperiments
+Rank 5 recieved storm-book_examples-ch03-topologies
+Rank 1 recieved britzke_archivator
+Rank 6 recieved commercehub-oss_gradle-avro-plugin
+Seeded workers
+Rank 7 recieved haraldk_TwelveMonkeys
+Checkstyle ends with 273 errors.
+Checkstyle ends with 195 errors.
+Rank 5 requesting more work
+Rank 5 recieved johnjohndoe_Android-Developers-Samples
+Rank 4 requesting more work
+Rank 4 recieved CloudBees-community_springboot-gradle-cloudbees-sample
+Checkstyle ends with 520 errors.
+Telling workers to exit
+Rank 3 requesting more work
+Rank 3 recieved nutzam_nutzwx
+Checkstyle ends with 443 errors.
+Rank 6 requesting more work
+Received final request from 6
+Checkstyle ends with 12 errors.
+Checkstyle ends with 1614 errors.
+Received final request from 4
+Rank 4 requesting more work
+Received final request from 1
+Rank 1 requesting more work
+Checkstyle ends with 2702 errors.
+Received final request from 3
+Rank 3 requesting more work
+Checkstyle ends with 29297 errors.
+Checkstyle ends with 10636 errors.
+Rank 5 requesting more work
+Received final request from 5
+Received final request from 2
+Rank 2 requesting more work
+Checkstyle ends with 44050 errors.
+Rank 7 requesting more work
+Received final request from 7
+Sent dietag to 1
+Sent dietag to 2
+Sent dietag to 3
+Sent dietag to 4
+Sent dietag to 5
+Sent dietag to 6
+Sent dietag to 7
+Done
+RESULT: 47.876549
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 7 with PID 0 on node udc-ba39-28h exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

@@ -49,7 +49,7 @@ void master() {
 * Set up the queue
 */
 	DIR *dp;
-	struct dirent *ep;     
+	struct dirent *ep;
 	dp = opendir ("localtmp/java_projects/");
 	int num_dirs = 1015;
 	int dir_count = 0;
@@ -179,7 +179,7 @@ void worker() {
 	int java_len  = 61;
 	int path_len  = 28;
 	int style_len = 20;
-	char java[]  = "java -jar checkstyle-6.15-all.jar -c google-style.xml -o jar/";
+	char java[]  = "java -jar checkstyle-6.15-all.jar -c mediawiki.xml -o jar/";
 	char path[]  = ".txt localtmp/java_projects/";
 	char style[] = "python style.py jar/";
 
@@ -223,11 +223,12 @@ void worker() {
 		// execute jar
 		
 		int ret;
-		if( !(ret = system(java_ptr)) ) {
+		//if( !(ret = system(java_ptr)) ) {
+			system(java_ptr);
 		    //printf("Command executed normally\n");
 		    // execute python parser
 			system(style_ptr);
-		}
+		//}
 
 
 		//printf("Rank %d freed\n",myrank);

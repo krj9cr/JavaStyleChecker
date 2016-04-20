@@ -1,0 +1,322 @@
+Initialized projects[][]
+Got project names
+Rank 2 recieved mDiyo_InfiCraft
+Rank 4 recieved datagrids_spec
+Rank 3 recieved eviltester_webDriverExperiments
+Rank 5 recieved storm-book_examples-ch03-topologies
+Rank 1 recieved britzke_archivator
+Rank 6 recieved commercehub-oss_gradle-avro-plugin
+Seeded workers
+Rank 7 recieved haraldk_TwelveMonkeys
+Checkstyle ends with 371 errors.
+Checkstyle ends with 361 errors.
+Rank 5 requesting more work
+Rank 5 recieved johnjohndoe_Android-Developers-Samples
+Rank 4 requesting more work
+Rank 4 recieved CloudBees-community_springboot-gradle-cloudbees-sample
+Checkstyle ends with 397 errors.
+Rank 3 requesting more work
+Rank 3 recieved nutzam_nutzwx
+Checkstyle ends with 163 errors.
+Rank 6 requesting more work
+Rank 6 recieved zscott_MultiBitExchange
+Checkstyle ends with 9 errors.
+Rank 4 requesting more work
+Rank 4 recieved mukesh4u_Facebook-Slide-Menu
+Checkstyle ends with 3039 errors.
+Rank 1 requesting more work
+Rank 1 recieved adamw_macwire-activator
+Checkstyle ends with 438 errors.
+Rank 4 requesting more work
+Rank 4 recieved powercrystals_NetherOres
+Rank 1 requesting more work
+Rank 1 recieved krtek_Birthday-widget
+Checkstyle ends with 3179 errors.
+Rank 3 requesting more work
+Rank 3 recieved kk-java_UploadFile
+Checkstyle ends with 1291 errors.
+Rank 4 requesting more work
+Rank 4 recieved vtst_ow
+Checkstyle ends with 254 errors.
+Rank 3 requesting more work
+Rank 3 recieved brewinapps_ios-maven-plugin
+Checkstyle ends with 775 errors.
+Checkstyle ends with 8333 errors.
+Rank 1 requesting more work
+Rank 1 recieved salendron_Snakeberry
+Rank 6 requesting more work
+Rank 6 recieved JesusM_PasswordFloatingLabelLayout
+Checkstyle ends with 343 errors.
+Rank 3 requesting more work
+Rank 3 recieved hacktics_good-old-files
+Checkstyle ends with 26595 errors.
+Checkstyle ends with 3534 errors.
+Rank 5 requesting more work
+Rank 5 recieved chrishulbert_JavaTutorial
+Checkstyle ends with 1461 errors.
+Checkstyle ends with 45 errors.
+Rank 6 requesting more work
+Rank 6 recieved apache_vysper
+Rank 1 requesting more work
+Rank 1 recieved jop-devel_jop
+Rank 2 requesting more work
+Rank 2 recieved tuxskar_pixmind
+Checkstyle ends with 1894 errors.
+Rank 3 requesting more work
+Rank 3 recieved aloiscochard_elasticsearch-osem
+Checkstyle ends with 434 errors.
+Rank 5 requesting more work
+Rank 5 recieved amlcurran_L-Preview-Demo
+Checkstyle ends with 73 errors.
+Rank 5 requesting more work
+Rank 5 recieved sdj64_Highlands
+Checkstyle ends with 22353 errors.
+Checkstyle ends with 3633 errors.
+Checkstyle ends with 9553 errors.
+Rank 3 requesting more work
+Rank 3 recieved Chipmunk9998_Spectate
+Rank 2 requesting more work
+Rank 2 recieved jiecao-fm_hashids-java
+Checkstyle ends with 22968 errors.
+Rank 4 requesting more work
+Rank 4 recieved slisson_mps-aec
+Checkstyle ends with 4609 errors.
+Rank 5 requesting more work
+Rank 5 recieved safarijv_ifpress-solr-plugin
+Checkstyle ends with 1325 errors.
+Checkstyle ends with 571 errors.
+Rank 3 requesting more work
+Rank 3 recieved ikai_App-Engine-Java-Mapper-API-demos
+Rank 2 requesting more work
+Rank 2 recieved tobrien_blog-example
+Rank 7 requesting more work
+Rank 7 recieved notnoop_java-apns
+Checkstyle ends with 196 errors.
+Checkstyle ends with 2163 errors.
+Rank 2 requesting more work
+Rank 2 recieved UnderwaterApps_overlap2d-runtime-libgdx
+Checkstyle ends with 308 errors.
+Rank 4 requesting more work
+Rank 4 recieved timbray_KeybaseLib
+Rank 3 requesting more work
+Rank 3 recieved processing_processing-tool-template
+Checkstyle ends with 3144 errors.
+Checkstyle ends with 122 errors.
+Rank 5 requesting more work
+Rank 5 recieved Knickedi_android-toolbox
+Rank 3 requesting more work
+Rank 3 recieved jcabi_jcabi
+Checkstyle ends with 8909 errors.
+Checkstyle ends with 184 errors.
+Rank 4 requesting more work
+Rank 4 recieved NikolaDespotoski_DrawerLayoutToggles
+Checkstyle ends with 5 errors.
+Rank 3 requesting more work
+Rank 3 recieved nickwph_InfiniteViewPager
+Checkstyle ends with 1794 errors.
+Rank 7 requesting more work
+Rank 7 recieved kompiro_astah-evernote-plugin
+Rank 6 requesting more work
+Rank 6 recieved chambs_comet-java
+Checkstyle ends with 35 errors.
+Rank 3 requesting more work
+Rank 3 recieved wilbur_Piggybank
+Checkstyle ends with 495 errors.
+Rank 7 requesting more work
+Rank 7 recieved Xyene_ASM-Late-Bind-Agent
+Checkstyle ends with 176 errors.
+Rank 6 requesting more work
+Rank 6 recieved youmu178_MultipleChoiceAlbun
+Checkstyle ends with 126 errors.
+Rank 3 requesting more work
+Rank 3 recieved dextorer_BuildingForAndroidTV
+Checkstyle ends with 10324 errors.
+Checkstyle ends with 83 errors.
+Checkstyle ends with 9836 errors.
+Rank 7 requesting more work
+Rank 7 recieved rossmason_mule-streaming-api-demo
+Rank 4 requesting more work
+Rank 4 recieved barjo_arvensis
+Rank 2 requesting more work
+Rank 2 recieved fcrepo3_fcrepo
+Checkstyle ends with 10298 errors.
+Checkstyle ends with 50 errors.
+Rank 7 requesting more work
+Rank 7 recieved gitgrimbo_android-sliding-menu-demo
+Rank 5 requesting more work
+Rank 5 recieved gornik_gorgeo
+Checkstyle ends with 3423 errors.
+Rank 6 requesting more work
+Rank 6 recieved delta534_Chisel
+Checkstyle ends with 142 errors.
+Rank 7 requesting more work
+Rank 7 recieved Buttink_couch-tatertot
+Checkstyle ends with 175 errors.
+Rank 5 requesting more work
+Rank 5 recieved jwang_iosched
+Checkstyle ends with 2433 errors.
+Rank 3 requesting more work
+Rank 3 recieved berndfo_zooterrain
+Checkstyle ends with 191 errors.
+Rank 3 requesting more work
+Rank 3 recieved mulesoft_mule-module-rest-router
+Checkstyle ends with 6013 errors.
+Rank 7 requesting more work
+Rank 7 recieved hank_litecoinj
+Checkstyle ends with 11000 errors.
+Checkstyle ends with 49 errors.
+Rank 3 requesting more work
+Rank 3 recieved ericyue_Express-Sensor
+Rank 4 requesting more work
+Rank 4 recieved hocken_wxg
+Checkstyle ends with 4824 errors.
+Rank 6 requesting more work
+Rank 6 recieved silverbullet-dk_opentele-client-android
+Checkstyle ends with 1722 errors.
+Rank 5 requesting more work
+Rank 5 recieved sps_pushover4j
+Checkstyle ends with 1066 errors.
+Rank 4 requesting more work
+Rank 4 recieved seven456_MultiChannelPackageTool
+Checkstyle ends with 123 errors.
+Rank 5 requesting more work
+Rank 5 recieved bither_bither-android
+Checkstyle ends with 323 errors.
+Rank 4 requesting more work
+Rank 4 recieved bodar_utterlyidle
+Checkstyle ends with 17368 errors.
+Checkstyle ends with 4969 errors.
+Checkstyle ends with 14399 errors.
+Rank 3 requesting more work
+Rank 3 recieved IngotPowered_IngotAPI
+Rank 6 requesting more work
+Rank 6 recieved pwittchen_EEGReader
+Rank 7 requesting more work
+Rank 7 recieved srafx_floatframelayout
+Checkstyle ends with 450 errors.
+Rank 3 requesting more work
+Rank 3 recieved couchbase_couchbase-jvm-core
+Checkstyle ends with 18 errors.
+Rank 7 requesting more work
+Rank 7 recieved bcdev_beam-globalbedo
+Checkstyle ends with 4495 errors.
+Checkstyle ends with 28299 errors.
+Rank 4 requesting more work
+Rank 4 recieved seamusphelan_ProfileSwitcher
+Checkstyle ends with 1748 errors.
+Rank 4 requesting more work
+Rank 4 recieved jenkinsci_ec2-plugin
+Rank 2 requesting more work
+Rank 2 recieved nsheridan_tumblr-java
+Checkstyle ends with 348123 errors.
+Checkstyle ends with 271 errors.
+Rank 2 requesting more work
+Rank 2 recieved viilaismonster_LinearAllocFix
+Checkstyle ends with 3169 errors.
+Rank 6 requesting more work
+Rank 6 recieved Armaxis_jmg
+Checkstyle ends with 1274 errors.
+Checkstyle ends with 101 errors.
+Rank 4 requesting more work
+Rank 4 recieved mhgrove_cp-common-utils
+Rank 2 requesting more work
+Rank 2 recieved maniac103_android_packages_apps_MotoFMService
+Checkstyle ends with 26208 errors.
+Checkstyle ends with 4188 errors.
+Checkstyle ends with 306 errors.
+Rank 2 requesting more work
+Rank 2 recieved googlesamples_io2014-codelabs
+Rank 7 requesting more work
+Rank 7 recieved Arachnid_AEAuth
+Checkstyle ends with 4140 errors.
+Rank 5 requesting more work
+Rank 5 recieved vRallev_OpenCV
+Rank 3 requesting more work
+Rank 3 recieved SINTEF-9012_bglib
+Checkstyle ends with 138 errors.
+Rank 7 requesting more work
+Rank 7 recieved hibernate_hibernate-shards
+Checkstyle ends with 8673 errors.
+Rank 4 requesting more work
+Rank 4 recieved willowtreeapps_saguaro
+Checkstyle ends with 5032 errors.
+Checkstyle ends with 7227 errors.
+Checkstyle ends with 247 errors.
+Rank 2 requesting more work
+Rank 2 recieved kankanV_KankanDashBoard
+Rank 3 requesting more work
+Rank 3 recieved laforge49_JActor2
+Rank 4 requesting more work
+Rank 4 recieved tourettes_libbluray
+Checkstyle ends with 115 errors.
+Rank 2 requesting more work
+Rank 2 recieved taobao_sqlautoreview
+Checkstyle ends with 23056 errors.
+Checkstyle ends with 6669 errors.
+Rank 6 requesting more work
+Rank 6 recieved OpherV_gitflow4idea
+Checkstyle ends with 8303 errors.
+Checkstyle ends with 1416 errors.
+Rank 7 requesting more work
+Rank 7 recieved lovetuzitong_BaiduImageViewer
+Rank 5 requesting more work
+Rank 5 recieved camunda_camunda-modeler
+Rank 3 requesting more work
+Rank 3 recieved cmichi_visual-traceroute
+Checkstyle ends with 85 errors.
+Rank 5 requesting more work
+Rank 5 recieved levkhomich_activator-akka-tracing
+Checkstyle ends with 869 errors.
+Checkstyle ends with 11665 errors.
+Rank 6 requesting more work
+Rank 6 recieved benjsicam_restful-blog
+Rank 2 requesting more work
+Rank 2 recieved thuytrinh_android-collage-views
+Checkstyle ends with 994 errors.
+Rank 7 requesting more work
+Rank 7 recieved broderix_android-ui-concepts
+Checkstyle ends with 36 errors.
+Rank 5 requesting more work
+Rank 5 recieved max-weller_friendica-for-android
+Checkstyle ends with 665 errors.
+Rank 6 requesting more work
+Rank 6 recieved googledrive_android-quickstart
+Checkstyle ends with 257 errors.
+Rank 2 requesting more work
+Rank 2 recieved Photobucket_Solbase
+Checkstyle ends with 287 errors.
+Telling workers to exit
+Rank 7 requesting more work
+Rank 7 recieved airlift_airlift
+Checkstyle ends with 56 errors.
+Received final request from 6
+Rank 6 requesting more work
+Checkstyle ends with 9802 errors.
+Checkstyle ends with 17985 errors.
+Received final request from 1
+Rank 1 requesting more work
+Checkstyle ends with 6304 errors.
+Received final request from 3
+Rank 3 requesting more work
+Received final request from 4
+Rank 4 requesting more work
+Received final request from 5
+Rank 5 requesting more work
+Checkstyle ends with 8083 errors.
+Received final request from 2
+Rank 2 requesting more work
+Checkstyle ends with 12404 errors.
+Rank 7 requesting more work
+Received final request from 7
+Sent dietag to 1
+Sent dietag to 2
+Sent dietag to 3
+Sent dietag to 4
+Sent dietag to 5
+Sent dietag to 6
+Sent dietag to 7
+Done
+RESULT: 201.028836
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 7 with PID 0 on node udc-ba39-28h exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------

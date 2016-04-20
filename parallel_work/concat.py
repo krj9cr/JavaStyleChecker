@@ -10,9 +10,9 @@ proc = Popen(['ls','jar/'], stdout=PIPE)
 filenames = proc.communicate()[0].strip().split()
 
 start = 0
-end = 96
+end = 116
 
-with open('concatted1-96.txt', 'w') as outfile:
+with open('concatted1-100_mediawiki.txt', 'w') as outfile:
     outfile.write("[")
     for fname in filenames:
     	if start < end:
