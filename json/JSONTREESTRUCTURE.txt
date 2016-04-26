@@ -1,43 +1,19 @@
 + Project
-	- idx			(unique id)
 	- name 			(e.g. /localtmp/java_projects/<name>)
 	- size 			(sum of Files.size)
 	- total_errors 	(sum of Files.errors)
 	- # files 		(num files in list)
 	- Files 		(list of files)
-		+ idx			(unique id)
 		+ size			(size of file in bytes)
 		+ path			(full path to file)
 		+ # errors 		(num errors in list)
 		+ Errors 		(list of errors)
-			- idx 			(unique id)
 			- name 			(name/type of style module)
 	----------------------
 			- message
 			- line #
 			- char #
-
-KAREN
-xredo samples
-	xredo JSON structure
-	xparse projects 0-9
-xparse 1052projects.txt
-xtar em up (only javas and change_logs)
-xmove data to Rivanna
--port to Rivanna
-	- embarrasingly parallel
-	- spawn.sh
-		- have one script spawn sbatch scripts, passing indicies for it to work on 
-		- pass it how many cores to use
-	- worker.sh
-		- each script does for loop on directory until it reaches its indicies
-		- then it does jar on all its assigned indicies
-		- then it parses all of them
-	- then combines output by concatenating results (delete ] from first file, delete [ from second file and concat?
-
-KEVIN/SHWETA
-- meaningful info system
-- NoSQL?
+			
 
 RQ1: ownership vs. errors?
 RQ2: # commits vs. errors?
