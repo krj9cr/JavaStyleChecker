@@ -2,25 +2,19 @@ import json
 
 p_num = 0
 chunk_num = 1
+all_projects = []
 
 def meta_data_parser(file_path):
 
 	global p_num
 	global chunk_num
+	global all_projects
 	chunk_size = 0
 	chunk_errors = 0
 	projects = []
 
-	# if file_path == '../json/concatted200-300_sun.txt':
-	# 	p_num += 100
-	# 	chunk_num += 1
-	# 	return
-
 	with open(file_path) as text_file:
 		data = json.load(text_file)
-
-	# need to add code for finding largest, middle, smallest
-	# add code to ignore duplicates
 
 	print "-------------------------------------------------------\n"
 
@@ -33,6 +27,7 @@ def meta_data_parser(file_path):
 		chunk_size += size
 		chunk_errors += errors
 		projects.append((size, errors, p_num, name))
+		all_projects.append((size, errors, p_num, name))
 		if p_num % 100 == 0:
 			print "\n\tchunk_num:\t" + str(chunk_num) + "\n\tchunk_size:\t" + str(chunk_size) + "\n\tchunk_errors:\t" + str(chunk_errors)
 			chunk_num += 1
@@ -56,5 +51,13 @@ def main():
 		file_path = '../json/concatted' + file + '_sun.txt'
 		meta_data_parser(file_path)
 		print "\n"
+
+	all_projects.sort(key=lambda tup: tup[0])
+	i = 0
+	while all_projects[i][0] == 0:
+		i += 1
+
+	d = len(all_projects)
+	print "\nMedian:\t\t" + str(all_projects[(d-i)/2][0]) + "\t\t" + str(all_projects[(d-i)/2][1]) + "\t\t" + str(all_projects[(d-i)/2][3])
 
 if __name__ == "__main__": main()
