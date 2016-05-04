@@ -1,6 +1,9 @@
 #!/bin/bash
 
+# Remove old output files
+rm jar/*
 
+# Load module
 module load openmpi/gcc
 
 # Re-compile the program
